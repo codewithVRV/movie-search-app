@@ -1,0 +1,121 @@
+.navbar-wrapper {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+    padding: 1rem;
+    align-items: center;
+    background-color: var(--nav-bar-color);
+}
+
+
+.theme-icon{
+   color: var(--input-text-color);
+   font-size: 1.5rem;
+   cursor: pointer;
+}
+.navbar-wrapper div:nth-child(1) {
+    font-size: xx-large;
+    letter-spacing: 10px;
+}
+.navbar-wrapper div:nth-child(2) {
+    flex-basis: 65%;
+}
+
+.navbar-wrapper div:nth-child(2) input {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--nav-input-color)
+}
+
+#search-bar {
+    position: relative;
+    color: var(--input-text-color);
+    font-size: larger;
+}
+
+#result-list {
+    position: absolute;
+    display: none;
+    width: 64.3%;
+    background-color: var(--list-card-color);
+    color: var(--nav-bar-color);
+    max-height: 400px;
+    overflow-y: scroll;
+    z-index: 10;
+}
+
+#result-list::-webkit-scrollbar {
+    display: none;
+}
+#result-list > .auto-complete {
+    font-size: 1.5rem;
+    letter-spacing: 0;
+    padding: 10px;
+    border-bottom: 1px solid var(--nav-bar-color);
+}
+
+.movie-base-title > a {
+    color: var(--input-text-color);
+    text-decoration: none;
+}
+
+.auto-complete:hover {
+    background-color: var(--list-hover-color);
+}
+
+
+
+/* Media Query */
+
+@media screen and (max-width: 576px) {
+    .navbar-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    #result-list {
+        width: 63%;
+    }
+    #result-list > .auto-complete {
+        font-size: 1.1rem;
+        padding: 5px;
+    }
+}
+
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .navbar-wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #search-bar {
+        width: 25rem;
+    }
+    .movie-base-title > a{
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+    #result-list{
+        width: 55.3%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .navbar-wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .movie-base-title > a{
+        font-size: 1.7rem;
+        letter-spacing: 1px;
+    }
+
+    #search-bar {
+        width: 33rem;
+    }
+}

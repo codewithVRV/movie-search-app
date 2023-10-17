@@ -1,0 +1,20 @@
+.error-wrapper {
+    margin: 1rem;
+}
+
+.error-wrapper h1 {
+  
+    color: var(--input-text-color);
+}
+
+.error-wrapper button {
+    border: none;
+    background-color: brown;
+    color: var(--input-text-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+    cursor: pointer;
+
+}

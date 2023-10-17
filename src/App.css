@@ -1,0 +1,26 @@
+:root {
+    --nav-bar-color: #00050d;
+    --nav-input-color: #33373d;
+    --input-text-color: white;
+    --list-card-color: #818274;
+    --list-hover-color: rgb(109, 106, 103);
+
+    
+}
+
+#app-wrapper{
+    background-color: var(--nav-bar-color);
+}
+
+[data-theme = "light"] {
+    --nav-bar-color: rgb(234, 226, 226);
+    --nav-input-color: #eceef1;
+    --input-text-color: black;
+    --list-card-color: #818274;
+    --list-hover-color: rgb(24, 23, 23);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
